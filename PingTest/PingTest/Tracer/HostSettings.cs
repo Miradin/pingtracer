@@ -22,7 +22,7 @@ namespace PingTracer.Tracer
 		public bool drawServerNames = true;
 		public bool drawLastPing = true;
 		public bool drawAverage = true;
-		public bool drawJitter = false;
+		public bool drawJitter = true;
 		public bool drawMinMax = false;
 		public bool drawPacketLoss = true;
 		public int badThreshold = 100;
