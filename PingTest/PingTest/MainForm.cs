@@ -349,6 +349,7 @@ namespace PingTracer
 					}
 					Interlocked.Increment(ref successfulPings);
 				}
+				CreateLogEntry("" + DateTime.Now.TimeOfDay.ToString("hh\\:mm\\:ss") + ", \t" + remoteHost.ToString() + ": \t" + (short)e.Reply.RoundtripTime);
 			}
 			finally
 			{
